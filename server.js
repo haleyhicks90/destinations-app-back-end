@@ -1,0 +1,34 @@
+// =============== Dependencies =============== //
+const express = require('express')
+const mongoose = require('mongoose')
+const cors = require('cors')
+const app = express()
+
+// =============== Controllers =============== //
+const destinationsController = require('./controllers/destinations.js')
+
+// =============== Middleware =============== //
+app.use(express.json())
+app.use(cors())
+require('dotenv').config()
+app.use('/destinations', destinationsController)
+
+
+// =============== Database =============== //
+const MONGODB_URI = process.env.MONGODB_URI;
+mongoose.connect(MONGODB_URI ,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false
+    }
+)
+
+mongoose.connection.once('open', () => {
+    console.log('Connected to Mongod...');
+})
+
+// =============== Port =============== //
+app.listen(3000, () => {
+    console.log('listening on port...', 3000);
+})
