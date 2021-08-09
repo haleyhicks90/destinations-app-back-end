@@ -13,9 +13,11 @@ user.post('/newaccount', (req, res) => {
     req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10))
     // this creates the new user
     User.create(req.body, (err, createdUser) => {
+        // logs an error if there is one
         if(err){
             console.log(err);
             res.json(err.message)
+            // this will show if it worked
         } else {
             console.log('user is created', createdUser);
             res.json(createdUser)
