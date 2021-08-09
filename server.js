@@ -6,12 +6,14 @@ const app = express()
 
 // =============== Controllers =============== //
 const destinationsController = require('./controllers/destinations.js')
+const userController = require('./controllers/users_controller.js')
 
 // =============== Middleware =============== //
 app.use(express.json())
 app.use(cors())
 require('dotenv').config()
 app.use('/destinations', destinationsController)
+app.use('/', userController)
 
 
 // =============== Database =============== //
