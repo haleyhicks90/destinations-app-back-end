@@ -3,9 +3,9 @@ const express = require('express')
 const user = express.Router()
 const User = require('../models/users.js')
 
-user.get('/', (req, res) => {
-    res.json('Test')
-})
+// user.get('/', (req, res) => {
+//     res.json('Test')
+// })
 
 // ===== Create Route ===== //
 user.post('/newaccount', (req, res) => {
