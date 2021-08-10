@@ -17,6 +17,7 @@ app.use('/destinations', destinationsController)
 
 
 // =============== Database =============== //
+const PORT = process.env.port || 3003
 const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(MONGODB_URI ,
     {
@@ -36,6 +37,6 @@ mongoose.connection.once('open', () => {
 })
 
 // =============== Port =============== //
-app.listen(3000, () => {
-    console.log('listening on port...', 3000);
+app.listen(PORT, () => {
+    console.log('listening on port...', PORT);
 })
