@@ -27,8 +27,8 @@ mongoose.connect(MONGODB_URI ,
 )
 
 app.get('/', (req, res) => {
-    // res.redirect('/destinations')
-    res.send('hello')
+    res.redirect('/destinations')
+    // res.send('hello')
 })
 
 mongoose.connection.once('open', () => {
