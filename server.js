@@ -26,6 +26,10 @@ mongoose.connect(MONGODB_URI ,
     }
 )
 
+app.get('/', (req, res) => {
+    res.redirect('/destinations')
+})
+
 mongoose.connection.once('open', () => {
     console.log('Connected to Mongod...');
 })
