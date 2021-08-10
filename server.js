@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cors())
 require('dotenv').config()
 app.use('/destinations', destinationsController)
-app.use('/', userController)
+// app.use('/', userController)
 
 
 // =============== Database =============== //
