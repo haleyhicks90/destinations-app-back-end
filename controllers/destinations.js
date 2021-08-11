@@ -40,17 +40,13 @@ router.get('/seed', (req, res) => {
         [
             {
                 location: "Italy",
-                image1: "https://thepointsguy.global.ssl.fastly.net/uk/originals/2020/10/GettyImages-1170100071.jpg",
-                image2: "https://www.state.gov/wp-content/uploads/2018/11/Italy-2109x1406.jpg",
-                image3: "https://www.planetware.com/wpimages/2020/02/italy-in-pictures-beautiful-places-to-photograph-venice-canal.jpg",
+                image: "https://thepointsguy.global.ssl.fastly.net/uk/originals/2020/10/GettyImages-1170100071.jpg",
                 language: "Italian",
                 population: 60.36
             },
             {
                 location: "Rio de Janeiro, Brazil",
-                image1: "https://gsg-61ea.kxcdn.com/media/contents/Rio%20city%20and%20rocks%20lucas-campoi-pHnzdSAEkRM-unsplash.jpg",
-                image2: "https://www.businessdestinations.com/wp-content/uploads/2018/08/Rio.jpg",
-                image3: "https://landedtravel.com/wp-content/uploads/2020/02/Brazil-Private-Custom-Travel-Design-Rio-de-Janiero-Copacabana-Purple.jpg",
+                image: "https://gsg-61ea.kxcdn.com/media/contents/Rio%20city%20and%20rocks%20lucas-campoi-pHnzdSAEkRM-unsplash.jpg",
                 language: "Portuguese",
                 population: 6.748
             },
