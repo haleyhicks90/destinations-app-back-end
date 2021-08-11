@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(cors())
 require('dotenv').config()
 app.use('/destinations', destinationsController)
-// app.use('/', userController)
+app.use('/destinations', userController)
 
 db.on("error", (err) => console.log(err.message + " is Mongod not running?"));
 db.on("connected", () => console.log("mongo connected: ", MONGODB_URI));
