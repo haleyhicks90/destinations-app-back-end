@@ -56,9 +56,7 @@ router.get('/seed', (req, res) => {
             },
             {
                 location: "New Zealand",
-                image1: "https://deih43ym53wif.cloudfront.net/travel-to-new-zealand-rough-guides_1436a026cc.jpeg",
-                image2: "https://ychef.files.bbci.co.uk/976x549/p08d08dx.jpg",
-                image3: "https://www.albomadventures.com/wp-content/uploads/2020/07/Catlins-waterfall-SL-Catlins-031_16607-copy.jpg",
+                image: "https://deih43ym53wif.cloudfront.net/travel-to-new-zealand-rough-guides_1436a026cc.jpeg",
                 language: "English, Te Reo Māori",
                 population: 4.917
             }
