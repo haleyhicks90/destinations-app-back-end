@@ -5,9 +5,7 @@ const mongoose = require('mongoose')
 const destinationSchema = new mongoose.Schema(
     {
         location: String,
-        image1: String,
-        image2: String,
-        image3: String,
+        image: String,
         language: String,
         population: Number
     }
